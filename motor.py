@@ -1,6 +1,6 @@
 class KCubeDCMotorSpyrelet(Spyrelet):
     requires = {
-        'motor': KCubeDCMotor,
+        'motor': Motor,
     }
 
     @Task()
