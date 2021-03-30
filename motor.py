@@ -1,6 +1,6 @@
 class KCubeDCMotorSpyrelet(Spyrelet):
     requires = {
-        'motor': KCubeDCMotor,
+        'motor': Motor,
     }
 
     @Task()
@@ -19,6 +19,11 @@ class KCubeDCMotorSpyrelet(Spyrelet):
                     }),
                 ]
         w = ParamWidget(params)
+        return w
+    
+    @Element()
+    def save(self):
+        w = RepositoryWidget(self)
         return w
 
 
